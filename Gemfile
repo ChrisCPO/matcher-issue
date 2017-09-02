@@ -4,6 +4,7 @@ ruby "2.4.0"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
+gem "clearance"
 gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
@@ -49,7 +50,7 @@ group :test do
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
-  gem "shoulda-matchers"
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
   gem "simplecov", require: false
   gem "timecop"
   gem "webmock"
